@@ -28,4 +28,19 @@ class MaxSubArraySumTest {
         int fifthResult = underTest.maxSubArraySumBruteForce(new int[]{8, 7, 5, 5, 3, 2, 1, 7}, 3);
         assertThat(fifthResult).isEqualTo(20);
     }
+
+    @Test
+    @DisplayName("SlidingWindowTest")
+    void canCalculateTheMaximumSubArraySumWithSlidingWindow(){
+        int firstResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{2, 1, 5, 1, 3, 2}, 3);
+        assertThat(firstResult).isEqualTo(9);
+        int secondResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{2, 1, 5, 1, 3, 2}, 4);
+        assertThat(secondResult).isEqualTo(11);
+        int thirdResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{8, 7, 5, 5, 3, 2, 1, 7}, 4);
+        assertThat(thirdResult).isEqualTo(25);
+        int fourthResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{8, 7, 5, 5, 3, 2, 1, 7}, 2);
+        assertThat(fourthResult).isEqualTo(15);
+        int fifthResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{8, 7, 5, 5, 3, 2, 1, 7}, 3);
+        assertThat(fifthResult).isEqualTo(20);
+    }
 }
