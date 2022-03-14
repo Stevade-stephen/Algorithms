@@ -42,5 +42,7 @@ class MaxSubArraySumTest {
         assertThat(fourthResult).isEqualTo(15);
         int fifthResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{8, 7, 5, 5, 3, 2, 1, 7}, 3);
         assertThat(fifthResult).isEqualTo(20);
+        int sixthResult = underTest.maxSubArraySumWithSlidingWindow(new int[]{3, 5, 5, 2, 3, 2, 1, 7}, 3);
+        assertThat(sixthResult).isEqualTo(13);
     }
 }
