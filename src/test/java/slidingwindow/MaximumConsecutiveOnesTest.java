@@ -22,6 +22,10 @@ class MaximumConsecutiveOnesTest {
         assertThat(result2).isEqualTo(4);
         int result3 = underTest.countConsecutiveOnes(new int[]{1, 0, 1, 1, 0, 0, 1, 0, 1});
         assertThat(result3).isEqualTo(4);
+        int result4 = underTest.countConsecutiveOnes(new int[]{1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1});
+        assertThat(result4).isEqualTo(6);
+        int result5 = underTest.countConsecutiveOnes(new int[]{1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1});
+        assertThat(result5).isEqualTo(5);
     }
 
     @Test
