@@ -14,5 +14,9 @@ class MinimumSizeSubArraySumTest {
         assertThat(result).isEqualTo(2);
         int result2 = underTest.minSubArraySum(new int[]{7, 3, 2, 1, 1, 6, 5, 4}, 5);
         assertThat(result2).isEqualTo(1);
+        int result3 = underTest.minSubArraySum(new int[]{8, 1, 5, 2, 1, 1, 6, 5}, 9);
+        assertThat(result3).isEqualTo(2);
+        int result4 = underTest.minSubArraySum(new int[]{4, 3, 2, 1, 3, 1, 6, 5, 4}, 5);
+        assertThat(result4).isEqualTo(1);
     }
 }
